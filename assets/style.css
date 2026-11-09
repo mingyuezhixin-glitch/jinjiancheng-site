@@ -506,6 +506,13 @@ body.toc-open { overflow: hidden; }
 .comments-head span { font-size: .76rem; color: var(--muted); }
 
 .cmt-list { display: flex; flex-direction: column; gap: .55rem; }
+
+/* 留言尚未归档：保留区块位置，不做成突兀的空白 */
+.cmt-empty {
+  padding: 1.1rem 1.2rem; border: 1px dashed var(--line); border-radius: 12px;
+  font-size: .88rem; color: var(--muted); line-height: 1.7;
+  background: color-mix(in srgb, var(--fg) 2%, transparent);
+}
 .cmt {
   display: flex; align-items: flex-start; gap: .7rem;
   background: var(--surface);
